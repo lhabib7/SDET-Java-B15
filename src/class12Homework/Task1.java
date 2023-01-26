@@ -12,7 +12,7 @@ public class Task1 {
         String text=input.next();
         if (!text.isEmpty()){
             if (text.length()%2!=0 && text.length()>=3){
-                System.out.println("the character in the middle of the String is : "+text.charAt(((text.length()-1)/2)));
+                System.out.println("the character in the middle of the String is : "+text.charAt(((text.length())/2)));
             }else System.out.println("the String has an even number of characters or has less than 3 characters");
         }
 

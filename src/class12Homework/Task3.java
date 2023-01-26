@@ -24,12 +24,11 @@ public class Task3 {
         System.out.println("Boy or Girl?");
         String baby=input.next();
         if (baby.equalsIgnoreCase("boy")){
-            int i=mom.length();
-            System.out.print(dad.substring(0,3).toUpperCase()+mom.substring(i-2,i).toUpperCase());
+            System.out.print(dad.substring(0,dad.length()/2).toUpperCase()+mom.substring(mom.length()/2).toUpperCase());
         }
         else if (baby.equalsIgnoreCase("girl")){
-            int i=dad.length();
-            System.out.println(mom.substring(0,2).toUpperCase()+dad.substring(i-3,i).toUpperCase());
+
+            System.out.println(mom.substring(0,mom.length()/2).toUpperCase()+dad.substring(dad.length()/2).toUpperCase());
         }
         else {
             System.out.println("Make sure your entry is correct !!");
